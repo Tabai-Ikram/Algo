@@ -8,7 +8,7 @@ char *ChargerChaine(int N) {
         printf("Erreur d'allocation mémoire.\n");
         exit(1);
     }
-    printf("Veuillez saisir une chaîne de caractères (taille maximale %d):\n", N - 1);
+    printf("saisi la chaine qui son longeur <=%d\n",N-1);
     scanf(" %[^\n]", chaine);  
     return chaine;
 }
@@ -49,7 +49,7 @@ int main() {
 
     ch = ChargerChaine(n);
     m = Longueur(ch);
-    if(n>=m){
+    if(n>m){
     char Tab[m + 1], T[m + 1];  // +1من اجل ال NULL
     ChargerTab(ch, Tab);
     AfficherTab(Tab, m);
@@ -60,6 +60,6 @@ int main() {
     free(ch);  
     }
     else
-    printf("error il faut n>=m");
+    printf("error, il faut  la taille de la chaine <%d\n",n);
     return 0;
 }
