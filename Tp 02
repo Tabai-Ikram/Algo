@@ -49,7 +49,7 @@ int main() {
 
     ch = ChargerChaine(n);
     m = Longueur(ch);
-    if(n>m){
+    if(n>=m){
     char Tab[m + 1], T[m + 1];  // +1من اجل ال NULL
     ChargerTab(ch, Tab);
     AfficherTab(Tab, m);
